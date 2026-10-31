@@ -14,7 +14,12 @@
 Follow prompts/2-write-adr.md
 run: a
 context: none
-requirement: <paste R-12 here>
+requirement: > After an order is placed, Online Boutique must:
+> 1. send the order confirmation email through **MailFast**, a new external email provider, which replaces the mock `emailservice` logic;
+> 2. award **loyalty points** through a new `loyaltyservice` (to be built);
+> 3. record an **"order placed" analytics event** for the marketing team.
+>
+> Marketing expects **more post-order actions next year** (SMS, fraud scoring, a recommendations update).
 language: Thai
 ```
 
@@ -23,7 +28,12 @@ language: Thai
 Follow prompts/2-write-adr.md
 run: b
 context: docs/scenario.md, docs/adr/0001-use-redis-for-cart-storage.md, system/online-boutique/src/checkoutservice/main.go
-requirement: <paste R-12 here>
+requirement: > After an order is placed, Online Boutique must:
+> 1. send the order confirmation email through **MailFast**, a new external email provider, which replaces the mock `emailservice` logic;
+> 2. award **loyalty points** through a new `loyaltyservice` (to be built);
+> 3. record an **"order placed" analytics event** for the marketing team.
+>
+> Marketing expects **more post-order actions next year** (SMS, fraud scoring, a recommendations update).
 language: Thai
 ```
 

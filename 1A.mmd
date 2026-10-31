@@ -1,0 +1,15 @@
+C4Container
+  title Containers: Online Boutique (from demo.proto only)
+  Person(customer, "Customer", "Shops online. Entry point not evidenced")
+  System_Boundary(boutique, "Online Boutique") {
+    Container(cart, "Cart Service", "gRPC", "Adds, gets and empties a user's cart")
+    Container(recommendation, "Recommendation Service", "gRPC", "Lists recommended product IDs")
+    Container(catalog, "Product Catalog Service", "gRPC", "Lists, gets and searches products")
+    Container(shipping, "Shipping Service", "gRPC", "Quotes shipping and ships orders")
+    Container(currency, "Currency Service", "gRPC", "Lists currencies and converts Money")
+    Container(payment, "Payment Service", "gRPC", "Charges credit cards")
+    Container(email, "Email Service", "gRPC", "Sends order confirmations")
+    Container(checkout, "Checkout Service", "gRPC", "Places orders")
+    Container(ad, "Ad Service", "gRPC", "Returns ads for context keywords")
+  }
+  UpdateLayoutConfig($c4ShapeInRow="3", $c4BoundaryInRow="1")
